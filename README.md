@@ -1,4 +1,4 @@
-# FoxVerse
+# <span style="color: red;">Fox</span><span style="color: blue;">Verse</span>
 
 🎉 **Bem-vindo ao FoxVerse!** 🎉
 
