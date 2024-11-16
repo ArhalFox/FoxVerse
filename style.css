@@ -1,0 +1,215 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #0b0303;
+    background: linear-gradient(to bottom, #09024d, #4401fe);
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Animação de entrada */
+}
+
+/* Animação para o efeito de fade in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Cabeçalho */
+header {
+    background: radial-gradient(to bottom, #500101, #f402364f, #f40404);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(3, 2, 2, 0.364);
+    opacity: 0;
+    animation: slideIn 1s ease-out 0.5s forwards; /* Animação do cabeçalho */
+}
+
+/* Animação do cabeçalho */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 0 0 5px #280202, 0 0 10px #5a0303, 0 0 20px #ff0000, 0 0 30px #0b0178, 0 0 40px #ff0099;
+    transition: text-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInLogo 1.5s ease-out 0.8s forwards; /* Animação do título */
+}
+
+/* Animação do título */
+@keyframes fadeInLogo {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ff0000e9;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #190244e2, #a40101f7);
+    color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 2s ease-out 1s forwards; /* Animação de fade no hero */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #f9f9f9;
+    text-shadow: 0 0 5px #4b4b4b, 0 0 10px #2b01ff, 0 0 20px #121212;
+    opacity: 0;
+    animation: fadeInText 2s ease-out 1s forwards; /* Animação do título */
+}
+
+/* Animação do texto no hero */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background: #eb020247;
+    color: #060000;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #ef0202a7;
+}
+
+/* Sobre */
+.sobre {
+    padding: 40px 20px;
+    text-align: center;
+    background: #a40101f7;
+    opacity: 0;
+    animation: fadeIn 2s ease-out 1.5s forwards; /* Animação de fade na seção Sobre */
+}
+
+.sobre h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Membros */
+.membros {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #a40101f7, rgba(7, 19, 250, 0.478));
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-out 2s forwards; /* Animação de fade na seção Membros */
+}
+
+.membros h2 {
+    margin-bottom: 20px;
+}
+
+.membros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(250, 249, 250, 0.82);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(192, 2, 2, 0.3);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: radial-gradient(to bottom, #3002ff, #fd00007a);
+    font-size: 0.9rem;
+}
