@@ -1,4 +1,4 @@
-#  style="color: red;">Fox style="color: blue;">Verse
+# <span style="color: rgb(255 3 3);">Fox</span><span style="color: blue;">Verse</span>
 
 🎉 **Bem-vindo ao FoxVerse!** 🎉
 
